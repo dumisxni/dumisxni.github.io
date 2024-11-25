@@ -12,17 +12,20 @@ body {
     margin: 0;
     padding: 1;
     min-height:100vh;
-    background: url('./Images/BackgroundIMG.jpg') no-repeat center center/cover;
-    background-size: cover;
+    background-image: url('./Images/pexels-dreamypixel-552789.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
     background-position: center;
+    background-attachment: fixed;
 }
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    background: url('./Images/navIMG.jpg');
+    padding: 20px 200px;
+    background-image: url('./Images/navIMG.jpg')
+    no-repeat center center/cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,9 +37,14 @@ body {
     text-decoration: none;
     font-weight: 800;
 }
+.gitLogo{
+   top:0;
+   left:0;
+   width:6.5rem;
+}
 .navbar a {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: white;
     font-weight: 600;
     text-decoration: none;
