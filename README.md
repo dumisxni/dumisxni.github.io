@@ -28,7 +28,7 @@ Feel free to reach out to me:
 ## 🚀 Projects
 
 - **Tic-Tac-Toe Game**: A simple Tic-Tac-Toe game built with Java. The computer uses Minimax AI to make optimal moves.
-  - [View on GitHub](https://github.com/dumisxni/tic-tac-toe)
+  - [View on GitHub](https://github.com/dumisxni/TicTac.git)
 
 - **Portfolio Website**: This personal portfolio showcasing my skills, projects, and achievements.
   - [Visit Portfolio](https://yourportfolio.com)
