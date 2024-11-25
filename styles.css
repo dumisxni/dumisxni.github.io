@@ -1,10 +1,63 @@
 /* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: white;
     margin: 0;
     padding: 0;
-    background: url('./Images/pexels-luis-gomes-166706-546819.jpg') no-repeat center center/cover;
+    min-height:100vh;
+    background: url('./Images/BackgroundIMG.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: url('./Images/navIMG.jpg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+.navbar a {
+    position: relative;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 14px 20px;
+    margin: 10 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.5s;
+}
+.navbar a:hover:before {
+    width: 100%;
+    background-color: #dea4a4;
 }
 
 .container {
@@ -15,48 +68,32 @@ body {
     color:white;
 }
 
-header {
-
-    padding: 50px 0;
+.profile-img {
+    width: 350px;
+    height: 230px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    
+}
+.profile {
+    padding: 100px 0;
     color: white;
     text-align: center;
 }
-
-header h1 {
+.profile h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-header p {
+.profile p {
     font-size: 1.5rem;
     margin-top: 10px;
 }
 
-.profile-img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    
-}
 
-nav {
-    background-color: #544c4c;
-    padding: 10px 0;
-    text-align: center;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    margin: 0 10px;
-    font-size: 1.1rem;
-}
 
-nav a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
+
 
 h2 {
     font-size: 2rem;
