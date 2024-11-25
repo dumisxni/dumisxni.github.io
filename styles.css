@@ -79,22 +79,22 @@ body {
 .profile-img {
     width: 350px;
     height: 230px;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-bottom: 30px;
     
 }
 .profile {
-    padding: 100px 0;
+    padding: 120px 0 50px 0;
     color: white;
     text-align: center;
 }
-.profile h1 {
+.profile h2 {
     font-size: 3rem;
     margin: 0;
 }
 
 .profile p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 10px;
 }
 
