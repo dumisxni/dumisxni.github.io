@@ -13,68 +13,138 @@ body {
     margin: 0;
     padding: 1;
     min-height:100vh;
-    background-image: url('./Images/pexels-dreamypixel-552789.jpg');
+    background-image: url('./Images/pexels-rpnickson-2885320.jpg');
+    /* background-image: url('./Images/pexels-dreamypixel-552789.jpg'); */
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
 }
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+
+li{
+    list-style: none;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navbar a:hover {
     width: 100%;
-    padding: 20px 200px;
-    background-image: url('./Images/navIMG.jpg')
-    no-repeat center center/cover;
+    color: rgb(44, 185, 204);
+}
+
+/* Header */
+header{
+
+    position: relative;
+    padding:0 2rem;
+}
+
+
+.navbar {
+    background-image: url('./Images/pexels-rpnickson-2885320.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0; /* Ensures it's aligned to the top of the viewport */
+    left: 0; /* Starts from the left edge of the page */
+    width: 100%; /* Makes the navbar span the full width of the viewport */
+    height: 60px; /* Fixed height for the navbar */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-}
-.logo{
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
-}
-.gitLogo{
-   top:0;
-   left:0;
-   width:6.5rem;
-}
-.navbar a {
-    position: relative;
-
-    color: white;
-    font-weight: 800;
-    text-decoration: none;
-    margin-left: 40px;
-    padding: 14px 20px;
-    margin: 10 20px;
-    font-size: 2.6rem;
+    padding: 0 2rem;
+    /* background: rgba(0, 0, 0, 0.8); Adds a slight background for better visibility */
+    z-index: 1000; /* Ensures it stays above other elements */
 }
 
-.navbar a::before {
-    content: '';
+
+.navbar .logo a{
+    top:0;
+    left:0;
+    width:5.5rem;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toogle_btn{
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: none;
+}
+.dropdown_menu{
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: 0.5s;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 280px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    overflow: hidden;
+    align-content: center;
 }
-.navbar a:hover:before {
-    width: 100%;
-    background-color: #d45454;
+
+/* Responsive design */
+.dropdown_menu.open{
+    height:110px;  
 }
+
+.dropdown_menu li{
+    padding: 0.7 rem;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+/* main section */
+.container{
+    /* height:calc(100vh - 60px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+@media(max-width: 900px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toogle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left:2rem;
+        width: unset;
+    }
+
+}
+
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     color:white;
 }
 .contactForm{
@@ -89,7 +159,7 @@ body {
     
 }
 .profile {
-    padding: 100px 0;
+    padding: 115px 100px 50px 100px;
     color: white;
     text-align: center;
 }
@@ -108,7 +178,6 @@ h2 {
     /* color: #333; */
     margin-bottom: 20px;
 }
-
 
 ul {
     list-style-type: none;
