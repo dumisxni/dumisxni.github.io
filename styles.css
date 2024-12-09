@@ -130,6 +130,7 @@ footer {
 
 /* Contact Form Styles */
 form {
+    background-color: rgb(30, 26, 55);
     /* background-color: transparent; */
     padding: 20px;
     border-radius: 8px;
