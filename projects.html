@@ -9,12 +9,27 @@
 <body>
 
     <header class = "header">
-        <a href="https://github.com/dumisxni" target="_blank" class="logo"><img src="./Images/github-mark-white.png" alt="github logo" class="gitLogo"></a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class = "navbar">
+            <div class="logo">
+                <a href="https://github.com/dumisxni" target="_blank" ><img src="./Images/github-mark-white.png" height="50px" alt="github logo" class="gitLogo"></a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <div class="toogle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    <!-- dropdown menu -->
+            <div class="dropdown_menu open ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+        
     </header>
 
 <main class="container">
