@@ -37,30 +37,37 @@
         </div>   
     </header>
 
-<main class="container">
-    <section>
-        <div class="profile">
-            <!-- <img src="./Images/20240622_142550.jpg" alt="Profile Picture" class="profile-img"> -->
-            <h2>Hello</h2>
-            <h2>I'm Dumisani Chambela</h2>
-            <!-- <p>A passionate Computer Science & Computer Engineering student at the University of Cape Town. My passions include software development, AI, and solving complex problems. I enjoy tackling challenging projects that allow me to learn new technologies and develop practical solutions.</p> -->
+<main class="main">
+    <section class="home">
+        <div class="container">
+
+            <div class="home-info">
+
+                <h2>Hello </h2>
+                <h2>I'm Dumisani Chambela</h2>
+               
+            </div>
+        
+            <section class="contactForm">
+                <h2>Send Me a Message</h2>
+                <form id="contactForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
         </div>
     </section>
-<section class="contactForm">
-    <h2>Send Me a Message</h2>
-    <form id="contactForm">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+            
+            
+            
 
 </main>
 
