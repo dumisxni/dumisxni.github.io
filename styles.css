@@ -120,8 +120,9 @@ li{
     top: 0;
     width: 100%;
     height:100vh;
-    z-index: -1;
+    /* z-index: -1; */
     padding: 250px 0 50px;
+
 }
 
 .home .home-info{
@@ -137,7 +138,7 @@ li{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background: linear-gradient(130deg,#383528 0%,#191919 100%) ;
+    background: linear-gradient(130deg,rgb(44, 185, 204) 20%,#191919 80%) ;
     border: 1px solid #3b3b3b;
     color: white;
     padding: 5px 25px;
@@ -200,6 +201,25 @@ li{
     border-color: white;
 }
 
+.left .github-repos a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: linear-gradient(130deg,rgba(2, 210, 237, 0.534) 20%,#191919 80%) ;
+    border: 1px solid #3b3b3b;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 25px;
+    
+}
+
+.left .projects h2{
+    color: rgb(55, 127, 127);
+}
+
+
 .social{
     display: flex;
     align-items: center;
@@ -240,8 +260,8 @@ li{
     height:400px;
     border-radius: 50%;
     object-fit: cover;
-    border:4px solid #ffc448;
-    box-shadow: 0 0 50px #ffc448;
+    border:4px solid rgb(44, 185, 204);
+    box-shadow: 0 0 50px rgb(44, 185, 204);
 }
 @media(max-width: 900px){
     .navbar .links,
