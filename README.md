@@ -31,7 +31,7 @@ Feel free to reach out to me:
   - [View on GitHub](https://github.com/dumisxni/TicTac.git)
 
 - **Portfolio Website**: This personal portfolio showcasing my skills, projects, and achievements.
-  - [Visit Portfolio]((https://dumisxni.github.io/))
+  - [Visit Portfolio](https://dumisxni.github.io/)
 
 ## 💡 Future Goals
 
